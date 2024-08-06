@@ -3,15 +3,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #252732;
+    color: #6265ef;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #2b2d3b;
+    color: #e2e4e5;
     padding: 1em 0;
     text-align: center;
+}
+header a{
+    text-decoration: none;
+    color: #e2e4e5;
 }
 
 main {
@@ -19,6 +23,7 @@ main {
     max-width: 1000px;
     margin: auto;
 }
+
 
 h1, h2 {
     margin: 0;
@@ -35,17 +40,20 @@ h2 {
 }
 
 .plugin {
-    background: #fff;
+    background: #2c2e3b;
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #242530;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .plugin img {
-    max-width: 100%;
-    height: auto;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
 }
 
 .plugin h3 {
@@ -56,22 +64,89 @@ h2 {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #333;
+    background: #4d4fae;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .plugin a:hover {
-    background: #555;
+    background: #313288;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
+    justify-content: center;
     position: fixed;
+    padding: 1px;
+    background: #2b2d3b;
+    color: #fff;
     width: 100%;
     bottom: 0;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 20px;
+    color: #7677e6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5254cc;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p, #about a {
+    margin: 5px 0;
+}
+
+#about a {
+    display: inline-block;
+    color: #7677e6;
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: #5254cc;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #4d4fae;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #313288;
+}
+
+.hidden {
+    display: none;
+}
+
+#read-more-btn {
+    background-color: #323443;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#read-more-btn:hover {
+    background-color: #252732;
 }

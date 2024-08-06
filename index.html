@@ -1,38 +1,82 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XG DAVID Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/gcc.png" type="image/png">
 </head>
 <body>
-<header>
-    <h1>XG DAVID Portfolio</h1>
-</header>
-<main>
-    <section id="about">
-        <h2>About me</h2>
-        <p>xdd</p>
-    </section>
-    <section id="plugins">
-        <h2>Plugin uri Minecraft</h2>
-        <div class="plugin" id="plugin1">
-            <img src="images/plugin1.png" alt="Plugin 1">
-            <h3>xddd1</h3>
-            <p>descriere</p>
-            <a href="https://youtube.com/xgdavid" target="_blank">uita te pe yytb</a>
-        </div>
-        <div class="plugin" id="plugin2">
-            <img src="images/plugin2.png" alt="Plugin 2">
-            <h3>xdd2</h3>
-            <p>Dfsdf.</p>
-            <a href="https://youtube.com/xgdavid" target="_blank">uita te pe yytb</a>
-        </div>
 
-    </section>
-</main>
+    <header>
+        <h1><a href="https://xgdavid.github.io"> XG DAVID Portfolio</a></h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hey! I am David (aka XG DAVID)</p>
+            <div id="more-content" class="hidden">
+                <p>I am from Romania 🇷🇴 and I can speak both Romanian and English.</p>
+                <p>I started coding in March 2020, focusing on small plugins for a solo Minecraft server. Here are some examples of my early work:</p>
+
+                <a href="https://www.youtube.com/watch?v=2sHQXiERC8k" target="_blank">HelpOP</a>,
+                <a href="https://youtu.be/9Oqme3M4rzE?si=2Mi5rSvAjDTyXqnW" target="_blank">TCG Plugins</a>,
+                <a href="https://www.youtube.com/watch?v=ywK5nB5e9VI" target="_blank">Special Quest</a>,
+                <a href="https://www.youtube.com/watch?v=3s_zrIeR1fQ" target="_blank">Toggle System</a>,
+                <a href="https://www.youtube.com/watch?v=0zUNILgV2R8" target="_blank">Job System</a>
+
+                <p>After shutting down my server, I opened a plugin shop and started posting some hardcoded plugins on <a href="https://poggit.pmmp.io">Poggit</a>. Here are a couple of examples:</p>
+
+                <a href="https://poggit.pmmp.io/p/XGTShowPlayerHP/1.0.1" target="_blank">XGTShowPlayerHP</a>,
+                <a href="https://poggit.pmmp.io/p/XGTAntiXRay/1.0.0" target="_blank">XGTAntiXRay</a>
+
+                <p>I had ~10-15 buyers. After that, I took a one-year break from development. When I returned, I created several new plugins:</p>
+
+                <a href="https://www.youtube.com/watch?v=79NutSEpXSw&t=1s" target="_blank">Special Quest #2</a>,
+                <a href="https://www.youtube.com/watch?v=fWhjwU_7DVc" target="_blank">Stats</a>,
+                <a href="https://www.youtube.com/watch?v=gZwCqTjYFSs" target="_blank">Fisher</a>
+
+                <p>After another break, I resumed development in January 2023.</p>
+                <p>In January 2023, I started working on a panel connected with a Minecraft server (PocketMine-MP). Here are the first three videos from the playlist:</p>
+
+                <a href="https://www.youtube.com/watch?v=Bgu_NpFPCe8&list=PLdLn7VdXmaO-qypbTS1BmHXqJdtkwrbXa&index=3" target="_blank">Panel Development</a>
+
+                <p>In July 2023, I created a WakaTime account to track my coding activity. You can view my profile <a href="https://wakatime.com/@XGDAVID" target="_blank">here</a>.</p>
+                <p>You can see more systems I've developed in this <a href="https://www.youtube.com/watch?v=EAE7p1YhjEY&list=PLdLn7VdXmaO-qypbTS1BmHXqJdtkwrbXa" target="_blank">playlist</a>. (I know you might not understand what I'm saying in the videos!)</p>
+                <p>I also maintain a to-do list on GitHub. You can check it out <a href="https://github.com/XGDavid/XGTCoreV2/blob/main/README.md" target="_blank">here</a>.</p>
+                <p>If you want, we can join my test server to see the systems in action. Feel free to contact me!</p>
+            </div>
+            <button id="read-more-btn">Read More</button>
+            <div class="social-links">
+                <a href="https://www.youtube.com/channel/xgdavid" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/XGDavid" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://discord.gg/d5ktVz8wDJ" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://wakatime.com/@XGDAVID" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            </div>
+        </section>
+        <section id="plugins">
+            <h2>My work</h2>
+            <div class="plugin" id="plugin1">
+                <img src="images/crates.png" alt="Plugin 2">
+                <h3>Crates</h3>
+                <p>A new type of crates</p>
+                <a href="https://youtu.be/TNWLT4y4XrM?si=FzUx5pktmylwESl1" target="_blank">Watch Video</a>
+
+            </div>
+            <div class="plugin" id="plugin2">
+                <img src="images/wither.png" alt="Plugin 3">
+                <h3>Wither</h3>
+                <p>Vanilla Wither in PocketMine</p>
+                <a href="https://youtu.be/dTnQWhMMaFk?si=JKgCRIqwM0-fUcjG" target="_blank">Watch Video</a>
+            </div>
+
+        </section>
+    </main>
+
 <footer>
-    <p>&copy; 2024 XG DAVID. </p>
+    <p><a href="https://youtube.com/xgdavid"> &copy; 2024 XG DAVID</a></p>
 </footer>
 <script src="script.js"></script>
 </body>
