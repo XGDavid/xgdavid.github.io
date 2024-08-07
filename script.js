@@ -14,13 +14,49 @@
 #
 */
 
-document.getElementById("read-more-btn").addEventListener("click", function() {
-    const moreContent = document.getElementById("more-content");
-    if (moreContent.classList.contains("hidden")) {
-        moreContent.classList.remove("hidden");
-        this.textContent = "Read Less";
-    } else {
-        moreContent.classList.add("hidden");
-        this.textContent = "Read More";
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to toggle content visibility
+    function toggleContent(button) {
+        const targetId = button.getAttribute("data-target");
+        const moreContent = document.getElementById(targetId);
+        if (moreContent.classList.contains("hidden")) {
+            moreContent.classList.remove("hidden");
+            button.textContent = "Read Less";
+        } else {
+            moreContent.classList.add("hidden");
+            button.textContent = "Read More";
+        }
     }
+
+    // Add event listeners to all read-more buttons
+    const readMoreButtons = document.querySelectorAll(".read-more-btn");
+    readMoreButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            toggleContent(this);
+        });
+    });
+
+    // Popup functionality
+    const popupTriggers = document.querySelectorAll('.popup-trigger');
+    const popupOverlay = document.querySelector('.popup-overlay');
+    const popupContent = document.querySelector('.popup-content img');
+    const closeBtn = document.querySelector('.close-btn');
+
+    popupTriggers.forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            const imgSrc = this.getAttribute('src');
+            popupContent.setAttribute('src', imgSrc);
+            popupOverlay.style.display = 'flex';
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popupOverlay.style.display = 'none';
+    });
+
+    popupOverlay.addEventListener('click', function(event) {
+        if (event.target === popupOverlay) {
+            popupOverlay.style.display = 'none';
+        }
+    });
 });
