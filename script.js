@@ -15,7 +15,6 @@
 */
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to toggle content visibility
     function toggleContent(button) {
         const targetId = button.getAttribute("data-target");
         const moreContent = document.getElementById(targetId);
@@ -28,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Add event listeners to all read-more buttons
+    // Event listeners read-more buttons
     const readMoreButtons = document.querySelectorAll(".read-more-btn");
     readMoreButtons.forEach(function(button) {
         button.addEventListener("click", function() {
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Popup functionality
+    // Popup
     const popupTriggers = document.querySelectorAll('.popup-trigger');
     const popupOverlay = document.querySelector('.popup-overlay');
     const popupContent = document.querySelector('.popup-content img');
@@ -59,4 +58,21 @@ document.addEventListener("DOMContentLoaded", function() {
             popupOverlay.style.display = 'none';
         }
     });
+
+    const images = [
+        "images/farmer.png",
+        "images/fisher.png",
+        "images/fruits.png",
+        "images/miner.png"
+    ];
+
+    let currentIndex = 0;
+    const witherImg = document.getElementById("jobs-img");
+
+    function changeImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        witherImg.src = images[currentIndex];
+    }
+
+    setInterval(changeImage, 10000);
 });

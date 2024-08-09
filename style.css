@@ -63,6 +63,14 @@ h2 {
     color: #878585;
 }
 
+#plugin3 img {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.hidden-img {
+    opacity: 0;
+}
+
 .plugin a {
     display: inline-block;
     margin-top: 10px;
